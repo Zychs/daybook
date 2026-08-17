@@ -5387,7 +5387,7 @@ async function runArchiveFromBoard() {
   const meta = document.getElementById("meta");
   const ok = window.confirm(
     "Archive live session DIFFS to:\n" +
-    "%USERPROFILE%\\jwrangle\\chat-governance\\archives\\…\n\n" +
+    "a local archive folder (configured on the host)\n\n" +
     "• Does NOT delete or move sessions\n" +
     "• Local disk only — no network, no API keys\n\n" +
     "Run archive now?"
@@ -5554,7 +5554,7 @@ applyPreviewTypeScale(previewTypeScale);
 /* 3-Q door — one click opens Grok/Claude with first input "3 q interview".
    Header button = new session. Session hover with no packet = resume that sid. */
 const THREE_Q_INPUT = "3 q interview";
-const THREE_Q_CWD = "%USERPROFILE%\\jwrangle";
+const THREE_Q_CWD = "";
 async function launchThreeQ(opts) {
   opts = opts || {};
   const btn = opts.btn || document.getElementById("btn3q");
