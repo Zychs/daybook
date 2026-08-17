@@ -5554,7 +5554,7 @@ applyPreviewTypeScale(previewTypeScale);
 /* 3-Q door — one click opens Grok/Claude with first input "3 q interview".
    Header button = new session. Session hover with no packet = resume that sid. */
 const THREE_Q_INPUT = "3 q interview";
-const THREE_Q_CWD = "C:\\Users\\bardw\\jwrangle";
+const THREE_Q_CWD = "%USERPROFILE%\\jwrangle";
 async function launchThreeQ(opts) {
   opts = opts || {};
   const btn = opts.btn || document.getElementById("btn3q");
